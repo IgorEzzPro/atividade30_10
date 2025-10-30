@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Catálogo de Tintas</title>
+    <link rel="stylesheet" href="css/catprod.css">
+</head>
+<body>
+    <!-- controle do carrinho (checkbox hack para abrir/fechar sem JS) -->
+    <input type="checkbox" id="cart-toggle" hidden>
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="brand">
+                <a href="index.html" class="logo">Tintas<span class="logo-accent">Pro</span></a>
+            </div>
+            <nav class="main-nav" aria-label="Navegação principal">
+                <a href="index.html">Home</a>
+                <a href="catprod.html" class="active">Catálogo</a>
+                <a href="contato.html">Contato</a>
+            </nav>
+                    <div class="cart-actions">
+                        <label for="cart-toggle" class="cart-btn" aria-hidden="false" title="Abrir carrinho">
+                            🛒 <span class="cart-count">0</span>
+                        </label>
+                    </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <h1>Catálogo de Tintas</h1>
+            <p class="lead">Explore nossa seleção de cores, acabamentos e sugestões de uso. Layout responsivo, apenas HTML/CSS.</p>
+        </section>
+
+        <div class="layout">
+            <aside class="filters" aria-labelledby="filtrosTitle">
+                <h2 id="filtrosTitle">Filtros</h2>
+                <label class="search">
+                    <span>Buscar</span>
+                    <input type="search" placeholder="Ex.: amarelo, acetinado, externo" aria-label="Buscar produtos">
+                </label>
+
+                <div class="filter-group">
+                    <h3>Categoria</h3>
+                    <ul>
+                        <li><label><input type="checkbox" checked> Internas</label></li>
+                        <li><label><input type="checkbox"> Externas</label></li>
+                        <li><label><input type="checkbox"> Esmalte</label></li>
+                        <li><label><input type="checkbox"> Spray</label></li>
+                    </ul>
+                </div>
+
+                <div class="filter-group">
+                    <h3>Acabamento</h3>
+                    <ul>
+                        <li> Fosco</li>
+                        <li> Semibrilho</li>
+                        <li> Acetinado</li>
+                        <li> Brilhante</li>
+                    </ul>
+                </div>
+
+                <p class="note">Obs: Esta versão é apenas com HTML e CSS — interações são visuais apenas.</p>
+            </aside>
+
+            <section class="catalog" aria-label="Lista de produtos">
+                <div class="grid">
+                    <!-- Produto 1 -->
+                                <article class="card animated">
+                        <div class="swatch" style="--color:#FFD400" aria-hidden="true"></div>
+                                    <div class="card-body">
+                                        <img class="thumb" src="assets/amarelo-sol.svg" alt="Amarelo Sol thumbnail">
+                                        <h3>Amarelo Sol</h3>
+                            <p class="desc">Tom quente e vibrante, ideal para destacar ambientes e criar sensação de energia.</p>
+                            <p class="meta">Acabamento: Acetinado • Uso: Interno</p>
+                                            <div class="card-footer">
+                                                <span class="price">R$ 89,90</span>
+                                                <a class="btn" href="https://www.suvinil.com.br/busca?q=amarelo%20sol" target="_blank" rel="noopener">Ver fabricante</a>
+                                                <button class="btn add-to-cart" type="button">Adicionar</button>
+                                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Produto 2 -->
+                                <article class="card animated">
+                        <div class="swatch" style="--color:#FFF176" aria-hidden="true"></div>
+                                    <div class="card-body">
+                                        <img class="thumb" src="assets/amarelo-canario.svg" alt="Amarelo Canário thumbnail">
+                                        <h3>Amarelo Canário</h3>
+                            <p class="desc">Tonalidade clara e alegre que ilumina espaços pequenos sem pesar.</p>
+                            <p class="meta">Acabamento: Fosco • Uso: Interno/Externo</p>
+                                            <div class="card-footer">
+                                                <span class="price">R$ 94,50</span>
+                                                <a class="btn" href="https://www.suvinil.com.br/busca?q=amarelo%20canario" target="_blank" rel="noopener">Ver fabricante</a>
+                                                <button class="btn add-to-cart" type="button">Adicionar</button>
+                                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Produto 3 -->
+                                <article class="card animated">
+                        <div class="swatch" style="--color:#FFC107" aria-hidden="true"></div>
+                                    <div class="card-body">
+                                        <img class="thumb" src="assets/amarelo-ouro.svg" alt="Amarelo Ouro thumbnail">
+                                        <h3>Amarelo Ouro</h3>
+                            <p class="desc">Tom intenso e elegante, ótimo para detalhes e acabamentos sofisticados.</p>
+                            <p class="meta">Acabamento: Semibrilho • Uso: Interno</p>
+                                            <div class="card-footer">
+                                                <span class="price">R$ 109,00</span>
+                                                <a class="btn" href="#">Ver fabricante</a>
+                                                <button class="btn add-to-cart" type="button">Adicionar</button>
+                                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Produto 4 -->
+                    <article class="card">
+                        <div class="swatch" style="--color:#D4A017" aria-hidden="true"></div>
+                                    <div class="card-body">
+                                        <img class="thumb" src="assets/amarelo-mostarda.svg" alt="Amarelo Mostarda thumbnail">
+                                        <h3>Amarelo Mostarda</h3>
+                            <p class="desc">Tonalidade quente com um toque terroso, muito usada em decoração retrô e contemporânea.</p>
+                            <p class="meta">Acabamento: Fosco • Uso: Interno</p>
+                                            <div class="card-footer">
+                                                <span class="price">R$ 82,30</span>
+                                                <a class="btn" href="#">Ver fabricante</a>
+                                                <button class="btn add-to-cart" type="button">Adicionar</button>
+                                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Produto 5 -->
+                    <article class="card">
+                        <div class="swatch" style="--color:#E6FF00" aria-hidden="true"></div>
+                                    <div class="card-body">
+                                        <img class="thumb" src="assets/amarelo-limao.svg" alt="Amarelo Limão thumbnail">
+                                        <h3>Amarelo Limão</h3>
+                            <p class="desc">Tonalidade cítrica e vibrante, perfeita para pontos de destaque e ambientes criativos.</p>
+                            <p class="meta">Acabamento: Semi-Gloss • Uso: Interno</p>
+                                            <div class="card-footer">
+                                                <span class="price">R$ 76,00</span>
+                                                <a class="btn" href="#">Ver fabricante</a>
+                                                <button class="btn add-to-cart" type="button">Adicionar</button>
+                                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Produto 6 -->
+                    <article class="card">
+                        <div class="swatch" style="--color:#FFECB3" aria-hidden="true"></div>
+                                    <div class="card-body">
+                                        <img class="thumb" src="assets/amarelo-pastel.svg" alt="Amarelo Pastel thumbnail">
+                                        <h3>Amarelo Pastel</h3>
+                            <p class="desc">Suave e discreto, ótimo para quartos e áreas de relaxamento.</p>
+                            <p class="meta">Acabamento: Fosco • Uso: Interno</p>
+                                            <div class="card-footer">
+                                                <span class="price">R$ 69,90</span>
+                                                <a class="btn" href="#">Ver fabricante</a>
+                                                <button class="btn add-to-cart" type="button">Adicionar</button>
+                                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Produto 7 -->
+                    <article class="card">
+                        <div class="swatch" style="--color:#FFB74D" aria-hidden="true"></div>
+                        <div class="card-body">
+                            <h3>Amarelo Terracota</h3>
+                            <p class="desc">Mistura de amarelo com tons terrosos, cria ambientes acolhedores.</p>
+                            <p class="meta">Acabamento: Acetinado • Uso: Interno/Externo</p>
+                            <div class="card-footer">
+                                <span class="price">R$ 99,00</span>
+                                <a class="btn" href="#">Ver fabricante</a>
+                            </div>
+                        </div>
+                    </article>
+
+                                <!-- Produto 8 -->
+                    <article class="card">
+                        <div class="swatch" style="--color:#FFF9C4" aria-hidden="true"></div>
+                        <div class="card-body">
+                            <h3>Amarelo Areia</h3>
+                            <p class="desc">Tom neutro com toque amarelado, combina com paletas modernas e naturais.</p>
+                            <p class="meta">Acabamento: Fosco • Uso: Interno</p>
+                                            <div class="card-footer">
+                                                <span class="price">R$ 72,50</span>
+                                                <a class="btn" href="#">Ver fabricante</a>
+                                                <button class="btn add-to-cart" type="button">Adicionar</button>
+                                            </div>
+                        </div>
+                    </article>
+
+                                <!-- Produtos adicionais -->
+                                <article class="card">
+                                    <div class="swatch" style="--color:#FFE082" aria-hidden="true"></div>
+                                    <div class="card-body">
+                                        <h3>Amarelo Solar 2</h3>
+                                        <p class="desc">Variante mais clara do Amarelo Sol, ótima para detalhes.</p>
+                                        <p class="meta">Acabamento: Acetinado • Uso: Interno</p>
+                                                        <div class="card-footer">
+                                                            <span class="price">R$ 85,00</span>
+                                                            <a class="btn" href="#">Ver fabricante</a>
+                                                            <button class="btn add-to-cart" type="button">Adicionar</button>
+                                                        </div>
+                                    </div>
+                                </article>
+
+                                <article class="card">
+                                    <div class="swatch" style="--color:#FFD54F" aria-hidden="true"></div>
+                                    <div class="card-body">
+                                        <h3>Amarelo Vibrante</h3>
+                                        <p class="desc">Extremamente vívido, ideal para fachadas e sinalização.</p>
+                                        <p class="meta">Acabamento: Semi-Gloss • Uso: Externo</p>
+                                                        <div class="card-footer">
+                                                            <span class="price">R$ 120,00</span>
+                                                            <a class="btn" href="#">Ver fabricante</a>
+                                                            <button class="btn add-to-cart" type="button">Adicionar</button>
+                                                        </div>
+                                    </div>
+                                </article>
+
+                                <article class="card">
+                                    <div class="swatch" style="--color:#FFF59D" aria-hidden="true"></div>
+                                    <div class="card-body">
+                                        <h3>Amarelo Neon</h3>
+                                        <p class="desc">Tom muito luminoso, ótimo para contrastes fortes.</p>
+                                        <p class="meta">Acabamento: Brilhante • Uso: Interno/Externo</p>
+                                                        <div class="card-footer">
+                                                            <span class="price">R$ 142,00</span>
+                                                            <a class="btn" href="#">Ver fabricante</a>
+                                                            <button class="btn add-to-cart" type="button">Adicionar</button>
+                                                        </div>
+                                    </div>
+                                </article>
+
+                                <article class="card">
+                                    <div class="swatch" style="--color:#FFF3E0" aria-hidden="true"></div>
+                                    <div class="card-body">
+                                        <h3>Amarelo Antique</h3>
+                                        <p class="desc">Tom vintage com leve suavidade, combina com tons terrosos.</p>
+                                        <p class="meta">Acabamento: Fosco • Uso: Interno</p>
+                                                        <div class="card-footer">
+                                                            <span class="price">R$ 95,00</span>
+                                                            <a class="btn" href="#">Ver fabricante</a>
+                                                            <button class="btn add-to-cart" type="button">Adicionar</button>
+                                                        </div>
+                                    </div>
+                                </article>
+
+                                <article class="card">
+                                    <div class="swatch" style="--color:#FFF8E1" aria-hidden="true"></div>
+                                    <div class="card-body">
+                                        <h3>Amarelo Manteiga</h3>
+                                        <p class="desc">Suave, ideal para ambientes de convivência e quartos.</p>
+                                        <p class="meta">Acabamento: Fosco • Uso: Interno</p>
+                                                        <div class="card-footer">
+                                                            <span class="price">R$ 74,00</span>
+                                                            <a class="btn" href="#">Ver fabricante</a>
+                                                            <button class="btn add-to-cart" type="button">Adicionar</button>
+                                                        </div>
+                                    </div>
+                                </article>
+
+                                <article class="card">
+                                    <div class="swatch" style="--color:#FFECB3" aria-hidden="true"></div>
+                                    <div class="card-body">
+                                        <h3>Amarelo Sol Nascente</h3>
+                                        <p class="desc">Tom acolhedor que lembra o amanhecer, suave e elegante.</p>
+                                        <p class="meta">Acabamento: Acetinado • Uso: Interno</p>
+                                                        <div class="card-footer">
+                                                            <span class="price">R$ 88,00</span>
+                                                            <a class="btn" href="#">Ver fabricante</a>
+                                                            <button class="btn add-to-cart" type="button">Adicionar</button>
+                                                        </div>
+                                    </div>
+                                </article>
+
+                                <article class="card">
+                                    <div class="swatch" style="--color:#FFDAB9" aria-hidden="true"></div>
+                                    <div class="card-body">
+                                        <h3>Amarelo Ouro Claro</h3>
+                                        <p class="desc">Versão mais clara do ouro, usada em detalhes e molduras.</p>
+                                        <p class="meta">Acabamento: Semibrilho • Uso: Interno</p>
+                                                        <div class="card-footer">
+                                                            <span class="price">R$ 101,00</span>
+                                                            <a class="btn" href="#">Ver fabricante</a>
+                                                            <button class="btn add-to-cart" type="button">Adicionar</button>
+                                                        </div>
+                                    </div>
+                                </article>
+
+                                <article class="card">
+                                    <div class="swatch" style="--color:#FFD08A" aria-hidden="true"></div>
+                                    <div class="card-body">
+                                        <h3>Amarelo Açafrão</h3>
+                                        <p class="desc">Tom com influência mais quente, tendência em design contemporâneo.</p>
+                                        <p class="meta">Acabamento: Acetinado • Uso: Interno/Externo</p>
+                                                        <div class="card-footer">
+                                                            <span class="price">R$ 110,00</span>
+                                                            <a class="btn" href="#">Ver fabricante</a>
+                                                            <button class="btn add-to-cart" type="button">Adicionar</button>
+                                                        </div>
+                                    </div>
+                                </article>
+
+                </div>
+            </section>
+        </div>
+    </main>
+
+            <!-- Drawer do carrinho (visual apenas, sem JS) -->
+            <aside class="cart-drawer" aria-labelledby="cartTitle">
+                <div class="cart-header">
+                    <h2 id="cartTitle">Seu Carrinho</h2>
+                    <label for="cart-toggle" class="close-cart" title="Fechar">✕</label>
+                </div>
+                    <div class="cart-content">
+                        <ul class="cart-items">
+                            <!-- items preenchidos via JavaScript -->
+                        </ul>
+
+                        <div class="cart-summary">
+                            <div class="row"><span>Subtotal</span><strong class="subtotal">R$ 0,00</strong></div>
+                            <div class="row"><span>Frete</span><strong class="shipping">R$ 0,00</strong></div>
+                            <div class="row total"><span>Total</span><strong class="total-price">R$ 0,00</strong></div>
+                        </div>
+
+                        <div class="cart-actions-area">
+                            <a href="contato.html" class="btn checkout">Finalizar compra</a>
+                            <label for="cart-toggle" class="btn secondary">Continuar comprando</label>
+                        </div>
+                    </div>
+            </aside>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>© 2025 TintasPro — Catálogo de Tintas • Apenas HTML/CSS</p>
+        </div>
+    </footer>
+    </footer>
+        <script src="js/cart.js"></script>
+    </body>
+</html>
